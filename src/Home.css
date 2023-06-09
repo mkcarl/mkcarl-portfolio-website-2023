@@ -1,0 +1,15 @@
+.tile{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 30px;
+}
+
+.tile-blue{
+    background-color: #01133b;
+
+}
+
+.tile-orange{
+    background-color: #f60;
+}
+

@@ -1,0 +1,13 @@
+.one-screen-wide{
+    max-width: 100vw;
+}
+
+.btn {
+    color: #d2ddde;
+    background-color:#ee7d50 ;
+}
+
+.btn:hover {
+    color: #d2ddde;
+    background-color: #d77249;
+}
