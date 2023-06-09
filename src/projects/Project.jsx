@@ -11,7 +11,7 @@ function Project({title, description, image, github, skills, visible, reversed})
                 </div>
                 <div className={'flex justify-center flex-col basis-1/2 p-16 text-justify'}>
                     <h1 className={'text-7xl font-semibold'}>{title}</h1>
-                    <h2 className={'text-2xl'}><a target={"_blank"} href={github}>{title}</a> is {description}</h2>
+                    <h2 className={'text-2xl'}><a className={'link'} target={"_blank"} href={github}>{title}</a> is {description}</h2>
                     <div className={'flex gap-8 p-4'}>
                         {
                             Object.entries(skills).map(([skillName, skillImage]) => {

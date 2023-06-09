@@ -14,7 +14,11 @@ h2 {
     color: #d2ddde;
 }
 
-.svg-logo{
-    fill: #ee7d50;
+
+.link{
+    color: #ee7d50;
 }
 
+.link:hover{
+    color: #b46546;
+}
