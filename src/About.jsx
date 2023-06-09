@@ -1,4 +1,14 @@
 import "/src/global.css"
+import linux from '/src/assets/linux.png'
+import aws from '/src/assets/aws.png'
+import computervision from '/src/assets/computer vision.png'
+import firebase from '/src/assets/firebase.jpg'
+import git from '/src/assets/git.png'
+import nodejs from '/src/assets/nodejs.png'
+import react from '/src/assets/react.png'
+import sql from '/src/assets/sql.png'
+
+import {Tooltip} from "react-tooltip";
 
 function About(){
     return(
@@ -51,16 +61,24 @@ function About(){
                         </div>
                         <div className={'flex flex-col w-full gap-8'}>
                             <div className={'flex justify-evenly'}>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
+                                <img className={'w-16 h-16 rounded-lg'} src={linux} alt='Linux' id={'linux'}/>
+                                <Tooltip content={"Linux"} anchorSelect={'#linux'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={git} alt='Git' id={'git'}/>
+                                <Tooltip content={"Git Version control"} anchorSelect={'#git'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={sql} alt='SQL' id={'sql'}/>
+                                <Tooltip content={"SQL"} anchorSelect={'#sql'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={firebase} alt='Firebase' id={'firebase'}/>
+                                <Tooltip content={"Firebase"} anchorSelect={'#firebase'}/>
                             </div>
                             <div className={'flex justify-evenly'}>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
-                                <div className={'w-16 h-16 bg-gray-500'}> </div>
+                                <img className={'w-16 h-16 rounded-lg'} src={aws} alt='AWS' id={'aws'}/>
+                                <Tooltip content={"Cloud computing"} anchorSelect={'#aws'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={nodejs} alt='NodeJS' id={'nodejs'}/>
+                                <Tooltip content={"NodeJS"} anchorSelect={'#nodejs'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={react} alt='ReactJS' id={'react'}/>
+                                <Tooltip content={"ReactJS"} anchorSelect={'#react'}/>
+                                <img className={'w-16 h-16 rounded-lg'} src={computervision} alt='Web' id={'computervision'}/>
+                                <Tooltip content={"Computer Vision"} anchorSelect={'#computervision'}/>
                             </div>
                         </div>
                     </div>
