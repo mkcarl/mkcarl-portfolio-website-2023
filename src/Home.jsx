@@ -1,5 +1,6 @@
 import "./Home.css"
 import "/src/global.css"
+import PlayTiles from "./PlayTiles.jsx";
 
 
 function Home() {
@@ -19,18 +20,7 @@ function Home() {
 
                     </div>
                     <div className={'flex items-center justify-center'}>
-                        <div className={"grid grid-cols-3 gap-5"}>
-                            <div className={"tile tile-orange"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-                            <div className={"tile tile-blue"}/>
-
-                        </div>
+                        <PlayTiles/>
                     </div>
                 </div>
 

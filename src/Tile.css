@@ -1,0 +1,64 @@
+.tile{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tile-hovered{
+    transform: translateY(-10px);
+}
+
+.tile-blue{
+    background-color: #01133b;
+
+}
+
+.tile-orange{
+    background-color: #f60;
+}
+
+.tile-clicked{
+/*    move tile to bottom, then disappear after it reaches bottom*/
+    animation: falloff 2s ease forwards;
+
+}
+
+@keyframes falloff{
+    0%{
+        transform: rotate(0deg);
+    }
+    5%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: translateY(100vh);
+        display: none;
+        position: relative;
+    }
+}
+
+.tile-overlay{
+    background-color: rgba(255,255,255,0.05);
+}
+
+.tile-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+.reveal{
+    animation: reveal 1s ease-in-out forwards;
+}
+
+@keyframes reveal{
+    0%{
+        z-index: -10;
+    }
+    100%{
+        z-index: 10;
+    }
+}
