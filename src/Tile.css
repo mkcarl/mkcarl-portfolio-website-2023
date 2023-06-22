@@ -1,7 +1,7 @@
 @media not all and (min-width: 640px){
     .tile{
-        width: 5rem;
-        height: 5rem;
+        width: 16vw;
+        height: 16vw;
         border-radius: 15px;
         cursor: pointer;
         transition: transform 0.3s ease;

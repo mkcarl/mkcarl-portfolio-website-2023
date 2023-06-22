@@ -13,9 +13,9 @@ import {Tooltip} from "react-tooltip";
 function About(){
     return(
             <div className={"p-16 h-full one-screen-wide flex-1"}>
-                <div className="grid grid-cols-2 h-full">
+                <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
 
-                    <div className={'flex items-center justify-center'}>
+                    <div className={'hidden lg:flex items-center justify-center'}>
                         <div className={"w-full flex flex-col gap-8"}>
                             <div className={"flex gap-4"}>
                                 <div className={"h-4 w-2/12 bg-red-500 rounded-md"}></div>
@@ -46,9 +46,9 @@ function About(){
                     </div>
 
                     <div className={'flex flex-col items-center justify-center'}>
-                        <div className={'p-16'}>
-                            <h1 className={'text-7xl font-semibold'}>About me</h1>
-                            <h2 className={'text-2xl text-justify'}>
+                        <div className={'py-12 lg:p16'}>
+                            <h1 className={'text-5xl lg:text-7xl font-semibold'}>About me</h1>
+                            <h2 id={"about-paragraph"} className={'text-xl lg:text-2xl text-justify max-h-64 lg:max-h-max overflow-scroll lg:overflow-auto'}>
                                 I am Carl, graduated from Asia Pacific University, Malaysia in BSc(Hons) in Computer
                                 Science specialised in Intelligent Systems. I have a strong curiosity for problem
                                 solving and I always try to integrate useful software solutions into my daily life.
