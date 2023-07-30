@@ -16,21 +16,21 @@ export default function PlayTiles(){
     }, [reset])
 
     return (
-        <div className={"grid grid-cols-3 gap-5 overflow-hidden p-16"}>
+        <div className={"grid grid-cols-3 gap-5 overflow-hidden p-4 lg:p-16"}>
             <Tile color={'orange'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>C</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>C</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>A</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>A</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>:)</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>:)</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>R</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>R</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>L</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>L</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
                 <button className={'btn'} onClick={handleReset}>
@@ -38,13 +38,13 @@ export default function PlayTiles(){
                 </button>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>Y</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>Y</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>A</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>A</p>
             </Tile>
             <Tile color={'blue'} reset={reset}>
-                <p className={'text-6xl font-semibold'}>N</p>
+                <p className={'text-3xl lg:text-6xl font-semibold'}>N</p>
             </Tile>
 
         </div>

@@ -38,7 +38,7 @@ export default function Tile({color = "blue", reset, children}) {
                 <div className={`tile tile-overlay ${isClicked ? '' : 'hidden'}`}>
                 </div>
             </div>
-            <div className={`tile-content ${isClicked?"reveal":''} -z-10`}>{children}</div>
+            <div  className={`tile-content ${isClicked?"reveal":''} -z-10 ${isClicked?"":"hidden"}`}>{children}</div>
         </div>
     )
 }
