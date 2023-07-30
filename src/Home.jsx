@@ -11,8 +11,8 @@ function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
                     <div className={'h-full flex items-center w-full'}>
                         <div>
-                            <h1 className={'text-start text-6xl lg:text-9xl font-semibold'}>Carl Yan</h1>
-                            <h2 className={"text-3xl lg:text-5xl text-justify"}>
+                            <h1 className={'text-start text-5xl lg:text-9xl font-semibold'}>Carl Yan</h1>
+                            <h2 className={"text-2xl lg:text-5xl text-justify"}>
                                 Aspiring Software Engineer
                                 keen in solving problems using software solutions
                             </h2>

@@ -16,6 +16,7 @@ function App() {
             scrollingSpeed={1000}
             navigation={true}
             navigationPosition={"right"}
+            normalScrollElements={"#about-paragraph, .project-description"}
             render={({state, fullpageApi}) => {
                 return(
                     <ReactFullpage.Wrapper>
