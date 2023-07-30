@@ -18,6 +18,10 @@ import telegram from '/src/assets/skills/telegram.png';
 import android from '/src/assets/skills/android.png';
 import firebase from '/src/assets/skills/firebase.png';
 import materialdesign from '/src/assets/skills/materialdesign.png';
+import runtimeterror from './assets/RuntimeTerrorShowcase.png';
+import gcp from './assets/skills/gcp.png';
+import flask from './assets/skills/flask.png'
+
 
 function Projects() {
     return (
@@ -40,6 +44,7 @@ function Projects() {
                         "ReactJS": react,
                         "ChartJS": chartjs
                     }}
+                    keywords={['fullstack', 'SSR', 'MongoDB', 'NextJS', 'Cloudinary', 'FFMPEG', 'Genshin Impact', 'crowd sourcing']}
                 />,
                 <Project
                     title={"Vision Of Crowd"}
@@ -58,6 +63,7 @@ function Projects() {
                         "TimescaleDB": timescaledb,
                         "TelegramAPI": telegram
                     }}
+                    keywords={['FYP', 'fullstack development', 'OpenCV', 'Computer Vision', 'dashboard', 'Telegram API', 'IoT', 'crowd monitoring']}
 
                 />,
                 <Project
@@ -71,13 +77,32 @@ function Projects() {
                     image={banking}
                     key={2}
                     github={'https://github.com/mkcarl/MobileBanking'}
+                    keywords={['Android development', 'MVVM', 'mobile app','course work']}
                     skills={{
                         "Android": android,
                         "Firebase": firebase,
                         "MaterialDesign": materialdesign
                     }}
-                />
-
+                />,
+                <Project
+                    title={"RuntimeTerror Inventory Management"}
+                    description={"This was a hackathon project (Dell Hack2Hire 2022) that I worked on with my team. " +
+                        "The project focuses on the automated ordering system via email. " +
+                        "The clients can just send an email regarding their new orders, and the system will " +
+                        "parse the email and automatically add the order to the database. " +
+                        "This project was reimplemented to fix up any unpolished code during the hackathon. "}
+                    image={runtimeterror}
+                    key={3}
+                    github={'https://github.com/mkcarl/runtimeterror-nextjs'}
+                    skills={{
+                        "NextJS": nextjs,
+                        "Firebase": firebase,
+                        "MaterialDesign": materialdesign,
+                        "Flask": flask,
+                        "GmailAPI": gcp
+                    }}
+                    keywords={['hackathon', 'Gmail API', "email parsing", 'Firebase', 'fullstack development', 'Flask', 'CRUD', 'MUI', 'NextJS', 'DataGrid']}
+                />,
 
             ]}
         />

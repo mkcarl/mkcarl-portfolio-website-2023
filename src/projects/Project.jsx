@@ -1,7 +1,7 @@
 import {Tooltip} from "react-tooltip";
 import React from "react";
 
-function Project({title, description, image, github, skills, visible, reversed}){
+function Project({title, description, image, github, skills, visible, reversed, keywords=[]}){
     return (
         <div className={`h-screen w-screen ${visible ? 'hidden': ''} flex justify-center`}>
             <div className={`flex ${reversed ? 'flex-row-reverse' : 'flex-row'} `}>
@@ -12,6 +12,7 @@ function Project({title, description, image, github, skills, visible, reversed})
                 <div className={'flex justify-center flex-col basis-1/2 p-16 text-justify'}>
                     <h1 className={'text-7xl font-semibold'}>{title}</h1>
                     <h2 className={'text-2xl'}><a className={'link'} target={"_blank"} href={github}>{title}</a> is {description}</h2>
+                    <p className={'highlight font-semibold'}>Key words: {keywords.join(', ')}</p>
                     <div className={'flex gap-8 p-4'}>
                         {
                             Object.entries(skills).map(([skillName, skillImage]) => {
