@@ -1,16 +1,10 @@
 import Project from "./projects/Project.jsx";
-import placeholder from "./assets/placeholder.jpg";
 import ProjectScroller from "./projects/ProjectScroller.jsx";
 
 import crowdmon_image from '/src/assets/crowdmon showcase.png'
 import voc from '/src/assets/voc showcase.png'
 import banking from '/src/assets/mobile banking showcase.png'
-
-import react from '/src/assets/skills/reactjs.png';
 import cloudinary from '/src/assets/skills/cloudinary.png';
-import ffmpeg from '/src/assets/skills/ffmpeg.png';
-import mongodb from '/src/assets/skills/mongodb.png';
-import chartjs from '/src/assets/skills/chartjs.png';
 import opencv from '/src/assets/skills/opencv.png';
 import nextjs from '/src/assets/skills/nextjs.png';
 import timescaledb from '/src/assets/skills/timescaledb.png';
@@ -20,8 +14,10 @@ import firebase from '/src/assets/skills/firebase.png';
 import materialdesign from '/src/assets/skills/materialdesign.png';
 import runtimeterror from './assets/RuntimeTerrorShowcase.png';
 import gcp from './assets/skills/gcp.png';
-import flask from './assets/skills/flask.png'
-
+import flask from './assets/skills/flask.png';
+import postgres from './assets/skills/postgres.png';
+import echarts from './assets/skills/echarts.png';
+import cloudflare from './assets/skills/cloudflare.png';
 
 function Projects() {
     return (
@@ -35,16 +31,19 @@ function Projects() {
                         "collected " +
                         "data will be used in a future project to recognize Paimon from any image and video."}
                     image={crowdmon_image}
-                    github={'https://github.com/mkcarl/crowdmon-react'}
+                    github={'https://app.crowdmon.mkcarl.com/'}
                     key={0}
                     skills={{
-                        "FFmpeg": ffmpeg,
-                        "MongoDB": mongodb,
                         "Cloudinary": cloudinary,
-                        "ReactJS": react,
-                        "ChartJS": chartjs
+                        "NextJS": nextjs,
+                        "ApacheEcharts": echarts,
+                        "FirebaseAuth": firebase,
+                        "OpenCV": opencv,
+                        "PostgreSQL": postgres,
+                        "CloudflareR2": cloudflare
                     }}
-                    keywords={['fullstack', 'SSR', 'MongoDB', 'NextJS', 'Cloudinary', 'FFMPEG', 'Genshin Impact', 'crowd sourcing']}
+                    keywords={['fullstack', 'SSR', 'NextJS', 'Cloudinary', 'Genshin Impact', 'crowd sourcing', 'dashboard',
+                    'authentication', 'OpenCV']}
                 />,
                 <Project
                     title={"Vision Of Crowd"}
